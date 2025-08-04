@@ -1,19 +1,30 @@
 import java.util.*;
 public class MostCons1 {
     public static int mostconsective1s(int nums[]){
-        ArrayList<Integer> arr = new ArrayList<Integer>();
+        // ArrayList<Integer> arr = new ArrayList<Integer>();
+        // int count=0;
+        // for (int i = 0; i < nums.length; i++) {
+        //     if (nums[i]==1) {
+        //         count++;
+        //     }
+        //     else{
+        //         arr.add(count);
+        //         count=0;
+        //     }
+        // }
+        // arr.add(count);
+        // return Collections.max(arr);
+
+        int max=0;
         int count=0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i]==1) {
+        for(int i=0; i<nums.length; i++){
+            if(nums[i]==1){
                 count++;
+                max = Math.max(count, max);
             }
-            else{
-                arr.add(count);
-                count=0;
-            }
+            else count=0;
         }
-        arr.add(count);
-        return Collections.max(arr);
+        return max;
 
     }
     public static void main(String[] args) {

@@ -33,13 +33,22 @@ public class MissingNumber {
 
 
                 // optimal 1 = sum method
+        // int len = nums.length;
+        // int sum = (len * (len + 1) )/ 2;
+        // int total = 0;
+        // for(int i=0; i<len; i++){
+        //     total+=nums[i];
+        // }
+        // return sum-total;
+
+        //OPTIMAL 2
+        int xor1 = 0, xor2=0;
         int len = nums.length;
-        int sum = (len * (len + 1) )/ 2;
-        int total = 0;
         for(int i=0; i<len; i++){
-            total+=nums[i];
+            xor1 ^= (i+1);
+            xor2 ^= nums[i];
         }
-        return sum-total;
+        return xor1^xor2;
 
     }
 
