@@ -20,23 +20,16 @@ public class SingleNumber {
         // }
         // return -1;
 
-        HashSet<Integer> set = new HashSet<Integer>();
+        int res=0;
         for(int i=0; i<nums.length; i++){
-            set.add(nums[i]);
+            res ^= nums[i];
         }
-        int i;
-        for( i=0; i<nums.length; i++){
-            if(set.contains(i)) break;
-        }
-        return i;
-
-
-
+        return res;
 
 
     }
     public static void main(String[] args) {
-        int arr[] = {1,1,2,3,3,4};
+        int arr[] = {1,1,2,3,3,4,4};
         int ans = singleNumber(arr);
         System.out.println(ans);;
     }
