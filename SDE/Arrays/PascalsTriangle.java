@@ -4,6 +4,7 @@ public class PascalsTriangle {
     public static void main(String[] args) {
         List<List<Integer>> ans = generate(5);
         System.out.println(ans);
+        System.out.println(ncr(4-1, 3-1));
     //     int n = 4;
     //     generate(n);;
     }
@@ -50,5 +51,14 @@ public class PascalsTriangle {
             return 1;
         }
         return n * fact(n-1);
+    }
+
+    public static long ncr(int n, int r){
+        long res=1;
+        for(int i=0; i<r;i++){
+            res *= (n-i);
+            res /= (i+1);
+        }
+        return res;
     }
 }
