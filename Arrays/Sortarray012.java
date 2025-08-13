@@ -11,26 +11,49 @@ public class Sortarray012 {
 
         // my approch using O(2N)
 
-       int c0=0,c1=0,c2=0;
-       for(int i=0; i<arr.length;i++){
-        if(arr[i]==0) c0++;
-        else if(arr[i]==1) c1++;
-        else c2++;
-       }
-       int index=0;
-       for(int i=index; i<c0; i++){
-        arr[index] = 0;
-        index++;
-       }
-       for(int i=index; i<c1+c0; i++){
-        arr[index] = 1;
-        index++;
-       }
-       for(int i=index; i<c2+c1+c0; i++){
-        arr[index] = 2;
-        index++;
-       }
+    //    int c0=0,c1=0,c2=0;
+    //    for(int i=0; i<arr.length;i++){
+    //     if(arr[i]==0) c0++;
+    //     else if(arr[i]==1) c1++;
+    //     else c2++;
+    //    }
+    //    int index=0;
+    //    for(int i=index; i<c0; i++){
+    //     arr[index] = 0;
+    //     index++;
+    //    }
+    //    for(int i=index; i<c1+c0; i++){
+    //     arr[index] = 1;
+    //     index++;
+    //    }
+    //    for(int i=index; i<c2+c1+c0; i++){
+    //     arr[index] = 2;
+    //     index++;
+    //    }
        
-       return arr;
+    //    return arr;
+
+        
+        int low=0;
+        int mid=0;
+        int high = arr.length-1;
+        while(mid<=high){
+        if(arr[mid]==0){ swap(arr, mid, low);
+            low++; mid++;
+        }
+        else if(arr[mid]==1) mid++;
+
+        else{  
+            swap(arr, mid, high);
+            high--;
+        }
+    }
+        return arr;
+       
+    }
+    public static void swap(int[] arr, int mid, int high){
+        int temp = arr[mid];
+        arr[mid] = arr[high];
+        arr[high] = temp;
     }
 }
