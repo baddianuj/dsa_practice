@@ -67,7 +67,7 @@ import java.util.Arrays;
 
 public class Nextperm {
     public static void main(String[] args) {
-        int arr[]  = {3, 2, 5, 7};
+        int arr[]  = {3, 2, 5, 7, 4};
         int len = arr.length;
         int count = fact(len); // total permutations
         printAllPermutations(arr, len, count);
