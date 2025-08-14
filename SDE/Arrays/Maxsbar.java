@@ -19,6 +19,21 @@ public class Maxsbar {
         // }
         // return max;
 
+        int max = Integer.MIN_VALUE;
+        int len = nums.length;
+        int sum=0;
+        for(int i=0; i<len; i++){
+            sum+=nums[i];
+            
+            if(sum > max) max = sum;
+
+            if(sum<0){
+                sum=0;
+            }
+        }
+        // if(max<0) return 0;
+        return max;
+
         
     }
     public static void main(String[] args) {
