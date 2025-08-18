@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Merge {
     public static void main(String[] args) {
-        int arr[] = {6,3,9,5,2,8};
+        int arr[] = {6,3,9,5,1,5,1,8,5,2,87,9,5,2,8};
         int len = arr.length;
         divide(arr, 0, len-1);
     }
