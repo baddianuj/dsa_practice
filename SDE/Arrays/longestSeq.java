@@ -8,28 +8,58 @@ public class longestSeq {
     }
     public static int longestConsecutive(int[] nums){
 
-        TreeSet<Integer> treeset = new TreeSet<>();
-        for(int val: nums){
-            treeset.add(val);
-        }
-        // Iterator<Integer> it = treeset.iterator();
-        // while(it.hasNext()){
-        //     it.next();
-        // }
-        System.out.println(treeset);
-        List<Integer> list = new ArrayList<Integer>(treeset);
-        int count= 1;
-        int max=0;
-        for(int i=1; i<list.size(); i++){
-            if(list.get(i)==1+list.get(i-1)){
-                count++;
-            }
-            else{
-                max = Math.max(max, count);
-                count=1;
+
+        //optimal soln usign hashsetllll
+
+        if(nums.length == 0) return 0;
+        
+        Set<Integer> set = new HashSet<>();
+        for(int num : nums) set.add(num);
+        
+        int longest = 0;
+        
+        for(int num : set){
+            // check if it's sequence start
+            if(!set.contains(num - 1)){
+                int currNum = num;
+                int currStreak = 1;
+                
+                while(set.contains(currNum + 1)){
+                    currNum++;
+                    currStreak++;
+                }
+                
+                longest = Math.max(longest, currStreak);
             }
         }
         
-        return Math.max(max, count);
+        return longest;
+
+
+        // kinda optimal solution 
+
+        // TreeSet<Integer> treeset = new TreeSet<>();
+        // for(int val: nums){
+        //     treeset.add(val);
+        // }
+        // // Iterator<Integer> it = treeset.iterator();
+        // // while(it.hasNext()){
+        // //     it.next();
+        // // }
+        // System.out.println(treeset);
+        // List<Integer> list = new ArrayList<Integer>(treeset);
+        // int count= 1;
+        // int max=0;
+        // for(int i=1; i<list.size(); i++){
+        //     if(list.get(i)==1+list.get(i-1)){
+        //         count++;
+        //     }
+        //     else{
+        //         max = Math.max(max, count);
+        //         count=1;
+        //     }
+        // }
+        
+        // return Math.max(max, count);
     }
 }
