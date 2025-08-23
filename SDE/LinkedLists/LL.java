@@ -10,7 +10,7 @@ public class LL {
         this.size = 0;
     }
 
-    private class Node{
+    public class Node{
         private int data;
         private Node next;
 
@@ -24,4 +24,12 @@ public class LL {
         }
 
     }
+
+    public static void main(String[] args) {
+        LL ll = new LL();
+        Node y = ll.new Node(1);
+        System.out.println(y.data);
+    }
+   
+
 }
