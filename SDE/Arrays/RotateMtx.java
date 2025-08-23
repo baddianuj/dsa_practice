@@ -10,7 +10,7 @@ public class RotateMtx {
             }
         }
         // System.out.println(Arrays.deepToString(matrix));
-        for(int i=0; i<len; i++){
+        for(int i=0; i<len; i++){   
             reverse(matrix, 0, len-1, i);
         }
         // for(int i=0; i<len; i++){
