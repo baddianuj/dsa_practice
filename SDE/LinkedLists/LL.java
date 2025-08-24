@@ -1,35 +1,36 @@
 import java.util.*;
-public class LL {
 
-    private Node Head;
-    private Node Tail;
+class Node{
+    int data;
+    Node next;
 
-    private int size;
-
-    public LL(){
-        this.size = 0;
+    Node(int data1){
+        this.data = data1;
+        this.next = null;
     }
+    Node(int data1, Node next1){
+        this.data = data1;
+        this.next = next1;
+    }
+}
 
-    public class Node{
-        private int data;
-        private Node next;
+public class LL{
+    private static Node arr2ll(int arr[]){
+        Node head = new Node(arr[0]);
+        Node mover = head;
 
-        public Node(int val){
-            this.data = val;
+        for(int i=1; i<arr.length; i++){
+            Node temp = new Node(arr[i]);
+            mover.next = temp;
+            mover = temp;
         }
-
-        public Node(int val, Node next1){
-            this.data = val;
-            this.next = next1;
-        }
-
+        return head;
     }
 
     public static void main(String[] args) {
-        LL ll = new LL();
-        Node y = ll.new Node(1);
-        System.out.println(y.data);
+        int arr[] = {1,2,3,4,5,6};
+        Node head = arr2ll(arr);
+        System.out.println(head.data);
+        // System.out.println(arr2ll(arr));
     }
-   
-
 }
