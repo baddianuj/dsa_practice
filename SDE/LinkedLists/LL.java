@@ -99,7 +99,36 @@ public class LL{
 
     private static Node removeEle(Node head, int val){
         if(head == null || head.next==null) return null;
-        
+        if(head.data == val){
+            head = head.next;
+            return head;
+        }
+
+        Node temp = head;
+        Node prev = null;
+        while(temp.next!=null){
+            if(temp.data == val){
+                prev.next = prev.next.next;
+                break;
+            }
+            prev = temp;
+            temp = temp.next;
+        }
+        return head;
+
+    }
+
+    private static Node add(Node head, int val){
+        if(head==null){
+            Node temp = new Node(val);
+            head = temp;
+            return head;
+        }
+        if(head.next==null){
+            
+        }
+        return head;
+
     }
 
 
@@ -121,6 +150,7 @@ public class LL{
         // print(head);
 
         print(removeK(head, 2));
+        print(removeEle(head, 3));
 
     }
 }
