@@ -27,6 +27,15 @@ public class LL{
         return head;
     }
 
+    private static void print(Node head){
+        Node temp = head;
+        while (temp!=null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
     private static int length (Node head){
         Node temp = head;
         int count = 0;
@@ -48,18 +57,70 @@ public class LL{
         return false;
     }
 
+    private static Node removeHead(Node head){
+
+        // Node temp = head;
+        if(head == null) return head;
+        head = head.next;
+        return head;
+    }
+
+    private static Node removeTail(Node head){
+        if(head==null || head.next == null) return null;
+        Node temp = head;
+        while (temp.next.next!=null){
+            temp = temp.next;
+        }
+        temp.next=null;
+        return head;
+        
+    }
+
+    private static Node removeK(Node head, int k){
+        if(head==null || head.next == null) return null;
+        if(k==1){
+            head = head.next;
+            return head;
+        }
+        int count=0;
+        Node temp = head;
+        Node prev = null;
+        while(temp!=null){
+            count++;
+            if(count==k){
+                prev.next = prev.next.next;
+                break;
+            }
+            prev = temp;
+            temp = temp.next;
+        }
+        return head;
+    }
+
+    private static Node removeEle(Node head, int val){
+        if(head == null || head.next==null) return null;
+        
+    }
+
+
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5,6};
         Node head = arr2ll(arr);
-        // System.out.println(head.data);
-        Node temp = head;
-        while (temp!=null){
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        }
-        System.out.println();
-        System.out.println(length(head));
-        System.out.println(search(head, 5));
+        // // System.out.println(head.data);
+        // Node temp = head;
+        // while (temp!=null){
+        //     System.out.print(temp.data + " ");
+        //     temp = temp.next;
+        // }
+        // System.out.println();
+        // System.out.println(length(head));
+        // System.out.println(search(head, 5));
+        // head = removeHead(head);
+        // print(head);
+        // head = removeTail(head);
+        // print(head);
+
+        print(removeK(head, 2));
 
     }
 }
