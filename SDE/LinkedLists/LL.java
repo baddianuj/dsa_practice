@@ -119,16 +119,9 @@ public class LL{
     }
 
     private static Node add(Node head, int val){
-        if(head==null){
-            Node temp = new Node(val);
-            head = temp;
-            return head;
-        }
-        if(head.next==null){
-            
-        }
+        Node temp = new Node(int val);
+        temp.next = head;
         return head;
-
     }
 
 
@@ -151,6 +144,7 @@ public class LL{
 
         print(removeK(head, 2));
         print(removeEle(head, 3));
+        print(add(head, 5));
 
     }
 }
