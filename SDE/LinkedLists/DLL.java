@@ -47,11 +47,29 @@ public class DLL {
     }
 
 
+    public static Node deletel(Node head){
+        if(head==null || head.next==null);
+        Node temp = head;
+        Node back  = null;
+        while(temp.next!=null){
+            back=temp;
+            temp = temp.next;
+        }
+        back.next=null;
+        temp = null;
+        return head;
+    }
+
 
     public static void main(String[] args) {
         int arr[] = {10,20,30,40,50,60};
         Node head = arr2dll(arr);
         print(head);
+        // head=head.next;                 delete head 
+        // head.prev=null;
+        // print(head);
+
+        print(deletel(head));
     }
 
 }
