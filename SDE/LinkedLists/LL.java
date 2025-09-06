@@ -1,8 +1,10 @@
-import java.util.*;
+
 
 class Node{
     int data;
     Node next;
+
+    
 
     Node(int data1){
         this.data = data1;
@@ -119,32 +121,36 @@ public class LL{
     }
 
     private static Node add(Node head, int val){
-        Node temp = new Node(int val);
-        temp.next = head;
+        if(head==null){
+            Node temp = new Node(val);
+            head = temp;
+            return head;
+        }
+        if(head.next==null){
+            
+        }
         return head;
     }
-
 
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5,6};
         Node head = arr2ll(arr);
-        // // System.out.println(head.data);
-        // Node temp = head;
-        // while (temp!=null){
-        //     System.out.print(temp.data + " ");
-        //     temp = temp.next;
-        // }
-        // System.out.println();
-        // System.out.println(length(head));
-        // System.out.println(search(head, 5));
-        // head = removeHead(head);
-        // print(head);
-        // head = removeTail(head);
-        // print(head);
+        // System.out.println(head.data);
+        Node temp = head;
+        while (temp!=null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+        System.out.println(length(head));
+        System.out.println(search(head, 5));
+        head = removeHead(head);
+        print(head);
+        head = removeTail(head);
+        print(head);
 
         print(removeK(head, 2));
         print(removeEle(head, 3));
-        print(add(head, 5));
 
     }
 }
