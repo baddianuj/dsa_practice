@@ -1,6 +1,6 @@
 public class revnumber {
     public static void main(String[] args) {
-        int num = 21345;
+        int num = 1234;
         System.out.println(reverse(num,0));
     }
     static int reverse(int num, int sum){
@@ -9,4 +9,5 @@ public class revnumber {
         sum = sum * 10 + rem;
         return reverse(num/10, sum);
     }
+    
 }
