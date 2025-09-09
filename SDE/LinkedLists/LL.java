@@ -120,57 +120,14 @@ public class LL{
 
     }
 
-    private static Node addele(Node head, int val){
-       return new Node(val, head);
-    }
-
-    private static Node addlast(Node head, int val){
-        if(head==null) return new Node(val);
-        Node temp = head;
-        while(temp.next!=null){
-            temp = temp.next;
-        }
-        temp.next = new Node(val);
-        return head;
-    }
-
-    private static Node addk(Node head, int val, int k){
-        // if(head==null || k==1) {
-        //     return new Node(val,head);
-        // }
-
-        // if(head==null){
-        //     if(k==1) return new Node(val);
-        //     else{
-        //         return head;
-        //     }
-        // }
-        if(head==null && k==1) {
-            return new Node(val);
-        }
-
+    private static Node add(Node head, int val){
         if(head==null){
-            return new Node(val);
-
+            Node temp = new Node(val);
+            head = temp;
+            return head;
         }
-
-        if(k==1){
-            return new Node(val,head);
-        }
-        
-        
-        int count=0;
-        Node temp = head;
-        Node prev = null;
-        while (temp!=null) {
-            count++;
-            if(count == k){
-                Node xyz = new Node(val);
-                prev.next = xyz;
-                xyz.next=temp.next;
-            }
-            prev = temp;
-            temp = temp.next;
+        if(head.next==null){
+            
         }
         return head;
     }
@@ -194,12 +151,6 @@ public class LL{
 
         print(removeK(head, 2));
         print(removeEle(head, 3));
-        Node h1 =addele(head, 66);
-        print(h1);
-        print(addlast(h1, 157));
-        print(h1);
-        print(addk(h1, 89, 4));
-        print(h1);
-        print(addk(h1, 69, 1));
+
     }
 }
