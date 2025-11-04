@@ -9,7 +9,11 @@ public class subset {
     public static void main(String[] args) {
         // subsets("", "abc");
 
-        System.out.println(substring("", "abc"));
+        // System.out.println(substring("", "abc"));
+
+        int arr[] = {1,2,3};
+        List<List<Integer>> ans = numbersubsets(arr);
+        System.out.println(ans);
         
     }
 
@@ -35,5 +39,21 @@ public class subset {
 
         left.addAll(right);
         return left;
+    }
+
+    public static List<List<Integer>> numbersubsets(int arr[]){
+        List<List<Integer>> outer = new ArrayList<>();
+        outer.add(new ArrayList<>());
+
+        for (int num : arr){
+            int n = outer.size();
+            for(int i=0; i<n; i++){
+                List<Integer> inner = new ArrayList<>(outer.get(i));
+                inner.add(num);
+                outer.add(inner);
+            }
+
+        }
+        return outer;
     }
 }
