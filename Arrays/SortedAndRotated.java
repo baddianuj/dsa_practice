@@ -9,6 +9,7 @@ public class SortedAndRotated {
                 count++;
             }
         }
+        System.out.println(i);
 
         if(count <=1 ) return true;
         return false;

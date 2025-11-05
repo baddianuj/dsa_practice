@@ -16,6 +16,10 @@ class Understanding
         System.out.println(a);
         System.out.print(b);
     }
+
+    public static int binarysearch(int arr[], int target){
+
+    }
 }
 
 
