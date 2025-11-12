@@ -62,10 +62,10 @@ public class WordSearch79 {
         };
 
         boolean[][] grid = new boolean[arr.length][arr[0].length];
-        System.out.println(exist(arr, "ABCCED", grid, 0, 0));
+        System.out.println(exist1(arr, "ABCCED", grid, 0, 0));
     }
 
-    public static boolean exist(char[][] board, String word, boolean[][] grid, int r, int c) {
+    public static boolean exist1(char[][] board, String word, boolean[][] grid, int r, int c) {
         // We’ll start by checking if the word exists from ANY starting point
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
