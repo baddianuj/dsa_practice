@@ -18,10 +18,8 @@ public class SudokuSolver {
 
 
         solve(board);
-        for(int[] arr : board){
-            System.out.println(Arrays.toString(arr));
-        }
-
+        display(board);
+//        System.out.println(solve(board));
 
     }
 
@@ -48,7 +46,10 @@ public class SudokuSolver {
         for (int i=1; i<=9; i++){
             if(isSafe(board,r,c,i)){
                 board[r][c] = i;
-                if(solve(board)) return true;
+                if(solve(board)){
+//                    display(board);
+                    return true;
+                }
                 else board[r][c] = 0;
             }
         }
@@ -56,7 +57,10 @@ public class SudokuSolver {
     }
 
     public static void display(int[][] board){
-
+        for(int[] arr : board){
+            System.out.println(Arrays.toString(arr));
+        }
+        System.out.println();
     }
 
 
