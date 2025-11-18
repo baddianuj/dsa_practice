@@ -1,4 +1,4 @@
-package introduction.inheritance;
+package introduction.inheritance.multilevel;
 
 public class Boxweight extends Box{
     double weight;

@@ -1,4 +1,4 @@
-package introduction.inheritance;
+package introduction.inheritance.multilevel;
 
 public class BoxPrice extends Boxweight{
     double cost;
@@ -8,7 +8,7 @@ public class BoxPrice extends Boxweight{
     }
 
     public BoxPrice(double l, double w, double h, double weight, double cost) {
-        super(l, w, h, weight);
+        super(l, weight);
         this.cost = cost;
     }
 }

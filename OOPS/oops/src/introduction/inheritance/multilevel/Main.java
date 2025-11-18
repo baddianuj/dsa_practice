@@ -1,4 +1,4 @@
-package introduction.inheritance;
+package introduction.inheritance.multilevel;
 
 public class Main {
     public static void main(String[] args) {

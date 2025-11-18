@@ -1,4 +1,4 @@
-package introduction.inheritance;
+package introduction.inheritance.multilevel;
 
 public class Box {
     double l;
