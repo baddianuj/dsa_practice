@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84c5477b-4e35-4466-9ba2-8e4ff0797fcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/nested/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/nested/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/practice/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/practice/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/practice/EngineCC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/practice/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/practice/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oops/introduction/interfaces/NiceCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oops/introduction/interfaces/NiceCar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/Arrays/Sortlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/Arrays/Sortlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/Arrays/singleele540.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/Arrays/singleele540.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/LinkedLists/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/LinkedLists/ListNode.java" afterDir="false" />
@@ -45,35 +47,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.TRY.executor": "Run",
-    "Application.WrapperClasses.executor": "Run",
-    "Application.introduction.abstractDemo.Main.executor": "Run",
-    "Application.introduction.access.Main.executor": "Run",
-    "Application.introduction.inheritance.Main.executor": "Run",
-    "Application.introduction.interfaces.nested.Main.executor": "Run",
-    "Application.introduction.polymorphism.Main.executor": "Run",
-    "Application.packtrials.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/personal/dsa_practice/OOPS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "E:/personal/dsa_practice/OOPS/oops/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TRY.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WrapperClasses.executor&quot;: &quot;Run&quot;,
+    &quot;Application.introduction.abstractDemo.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.introduction.access.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.introduction.inheritance.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.introduction.interfaces.nested.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.introduction.interfaces.practice.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.introduction.polymorphism.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.packtrials.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/personal/dsa_practice/OOPS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/personal/dsa_practice/OOPS/oops/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.introduction.interfaces.nested.Main">
+}</component>
+  <component name="RunManager" selected="Application.introduction.interfaces.practice.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="introduction.interfaces.Main" />
       <module name="oops" />
@@ -126,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="introduction.polymorphism.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="introduction.polymorphism.Main" />
+    <configuration name="introduction.interfaces.practice.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="introduction.interfaces.practice.Main" />
       <module name="oops" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="introduction.polymorphism.*" />
+          <option name="PATTERN" value="introduction.interfaces.practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.introduction.interfaces.practice.Main" />
         <item itemvalue="Application.introduction.interfaces.nested.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.introduction.abstractDemo.Main" />
         <item itemvalue="Application.introduction.access.Main" />
-        <item itemvalue="Application.introduction.polymorphism.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +168,8 @@
       <option name="presentableId" value="Default" />
       <updated>1763189593422</updated>
       <workItem from="1763193472651" duration="4000" />
-      <workItem from="1763193620799" duration="28503000" />
+      <workItem from="1763193620799" duration="30906000" />
+      <workItem from="1763555214207" duration="517000" />
     </task>
     <servers />
   </component>
