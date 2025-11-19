@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84c5477b-4e35-4466-9ba2-8e4ff0797fcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/CDPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/ElectricEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/NiceCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/PowerEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/nested/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/nested/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oops/src/introduction/interfaces/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oops/introduction/interfaces/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oops/introduction/interfaces/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/oops/introduction/interfaces/NiceCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oops/introduction/interfaces/NiceCar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/Arrays/Sortlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/Arrays/Sortlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/Arrays/singleele540.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/Arrays/singleele540.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/LinkedLists/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/LinkedLists/ListNode.java" afterDir="false" />
@@ -56,6 +53,7 @@
     "Application.introduction.abstractDemo.Main.executor": "Run",
     "Application.introduction.access.Main.executor": "Run",
     "Application.introduction.inheritance.Main.executor": "Run",
+    "Application.introduction.interfaces.nested.Main.executor": "Run",
     "Application.introduction.polymorphism.Main.executor": "Run",
     "Application.packtrials.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -75,7 +73,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.introduction.interfaces.nested.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="introduction.interfaces.Main" />
       <module name="oops" />
@@ -115,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="introduction.inheritance.multilevel.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="introduction.inheritance.multilevel.Main" />
+    <configuration name="introduction.interfaces.nested.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="introduction.interfaces.nested.Main" />
       <module name="oops" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="introduction.inheritance.multilevel.*" />
+          <option name="PATTERN" value="introduction.interfaces.nested.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.introduction.interfaces.nested.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.introduction.abstractDemo.Main" />
         <item itemvalue="Application.introduction.access.Main" />
         <item itemvalue="Application.introduction.polymorphism.Main" />
-        <item itemvalue="Application.introduction.inheritance.multilevel.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1763189593422</updated>
       <workItem from="1763193472651" duration="4000" />
-      <workItem from="1763193620799" duration="26597000" />
+      <workItem from="1763193620799" duration="28503000" />
     </task>
     <servers />
   </component>
