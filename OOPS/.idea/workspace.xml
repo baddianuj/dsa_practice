@@ -5,24 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84c5477b-4e35-4466-9ba2-8e4ff0797fcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/inheritance/multiple/ClassA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/inheritance/multiple/ClassB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/inheritance/multiple/ClassC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/inheritance/multiple/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/polymorphism/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/polymorphism/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/polymorphism/Shapes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/polymorphism/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/polymorphism/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/abstractDemo/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/abstractDemo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/abstractDemo/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/access/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/access/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/Brake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/Media.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oops/src/introduction/inheritance/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/oops/src/introduction/inheritance/multilevel/Box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oops/src/introduction/inheritance/BoxPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/oops/src/introduction/inheritance/multilevel/BoxPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oops/src/introduction/inheritance/Boxweight.java" beforeDir="false" afterPath="$PROJECT_DIR$/oops/src/introduction/inheritance/multilevel/Boxweight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oops/src/introduction/inheritance/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/oops/src/introduction/inheritance/multilevel/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oops/introduction/inheritance/Box.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oops/introduction/inheritance/BoxPrice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oops/introduction/inheritance/Boxweight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oops/introduction/inheritance/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/Arrays/Sortlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/Arrays/Sortlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/Arrays/singleele540.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/Arrays/singleele540.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/LinkedLists/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/LinkedLists/ListNode.java" afterDir="false" />
@@ -39,6 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,6 +56,8 @@
     "Application.Main.executor": "Run",
     "Application.TRY.executor": "Run",
     "Application.WrapperClasses.executor": "Run",
+    "Application.introduction.abstractDemo.Main.executor": "Run",
+    "Application.introduction.access.Main.executor": "Run",
     "Application.introduction.inheritance.Main.executor": "Run",
     "Application.introduction.polymorphism.Main.executor": "Run",
     "Application.packtrials.executor": "Run",
@@ -83,20 +78,39 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.introduction.polymorphism.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="introduction.interfaces.Main" />
       <module name="oops" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="introduction.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WrapperClasses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="introduction.pack1.WrapperClasses" />
+    <configuration name="introduction.abstractDemo.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="introduction.abstractDemo.Main" />
       <module name="oops" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="introduction.pack1.*" />
+          <option name="PATTERN" value="introduction.abstractDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="introduction.access.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="introduction.access.Main" />
+      <module name="oops" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="introduction.access.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,26 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="packtrials" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="introduction.pack1.packtrials" />
-      <module name="oops" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="introduction.pack1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.introduction.abstractDemo.Main" />
+        <item itemvalue="Application.introduction.access.Main" />
         <item itemvalue="Application.introduction.polymorphism.Main" />
         <item itemvalue="Application.introduction.inheritance.multilevel.Main" />
-        <item itemvalue="Application.packtrials" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.WrapperClasses" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1763189593422</updated>
       <workItem from="1763193472651" duration="4000" />
-      <workItem from="1763193620799" duration="13697000" />
+      <workItem from="1763193620799" duration="24858000" />
     </task>
     <servers />
   </component>
