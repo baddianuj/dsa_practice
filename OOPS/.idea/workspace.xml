@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84c5477b-4e35-4466-9ba2-8e4ff0797fcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/abstractDemo/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/abstractDemo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/abstractDemo/Parent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/access/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/access/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/Brake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/Media.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/CDPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/ElectricEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/NiceCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/PowerEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oops/src/introduction/interfaces/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/oops/src/introduction/interfaces/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/oops/introduction/interfaces/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oops/introduction/interfaces/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/Arrays/Sortlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/Arrays/Sortlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/Arrays/singleele540.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/Arrays/singleele540.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SDE/LinkedLists/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDE/LinkedLists/ListNode.java" afterDir="false" />
@@ -170,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1763189593422</updated>
       <workItem from="1763193472651" duration="4000" />
-      <workItem from="1763193620799" duration="24858000" />
+      <workItem from="1763193620799" duration="26597000" />
     </task>
     <servers />
   </component>
