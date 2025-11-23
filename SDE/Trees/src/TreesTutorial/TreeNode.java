@@ -1,5 +1,5 @@
 package TreesTutorial;
-import javax.management.NotificationEmitter;
+
 import java.util.*;
 public class TreeNode {
 
@@ -27,22 +27,21 @@ public class TreeNode {
     }
 
     public void populate(Scanner sc, Node node){
-        System.out.println("do you want to enter left?" + node.val);
-        boolean left = sc.nextBoolean();
 
+        System.out.println("enter left of " + node.val + " ?");
+        boolean left = sc.nextBoolean();
         if(left){
-            System.out.println("enter left node val");
-            int value = sc.nextInt();
-            node.left = new Node(value);
+            System.out.println("enter left value : ");
+            int val = sc.nextInt();
+            node.left = new Node(val);
             populate(sc, node.left);
         }
-
-        System.out.println("do you want to enter right?" + node.val);
+        System.out.println("enter right of " + node.val + " ?");
         boolean right = sc.nextBoolean();
         if(right){
-            System.out.println("enter right node val");
-            int value = sc.nextInt();
-            node.right = new Node(value);
+            System.out.println("enter right value : ");
+            int val = sc.nextInt();
+            node.right = new Node(val);
             populate(sc, node.right);
         }
     }
