@@ -52,8 +52,9 @@ public class BST {
             node.right = insert(value, node.right);
         }
         node.height = Math.max(height(node.left), height(node.right)) +1;
-        return node;
+        return (node);
     }
+
 
     public boolean balanced(){return balanced(root);}
 
