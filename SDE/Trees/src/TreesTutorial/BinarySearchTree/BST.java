@@ -32,6 +32,10 @@ public class BST {
         return node.height;
     }
 
+    public int height(){
+        return height(root);
+    }
+
     public boolean isEmpty(){
         return root==null;
     }

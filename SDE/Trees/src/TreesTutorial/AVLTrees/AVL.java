@@ -111,6 +111,13 @@ public class AVL {
         return Math.abs(height(node.left)- height(node.right)) <=1 && balanced(node.left) && balanced(node.right);
     }
 
+    public void print(){
+        print(root);
+    }
 
+    private void print(Node node){
+        if (node==null) return;
+
+    }
 }
 
