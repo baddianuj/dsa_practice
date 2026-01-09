@@ -117,7 +117,6 @@ public class AVL {
 
     private void print(Node node){
         if (node==null) return;
-
     }
 }
 
