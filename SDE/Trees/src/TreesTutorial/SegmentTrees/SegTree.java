@@ -6,6 +6,9 @@ public class SegTree {
         SegTree tree = new SegTree(arr);
         tree.display();
         System.out.println(tree.query(0,7));
+        tree.update(6,14);
+        System.out.println(tree.query(0,7));
+
 
     }
 
