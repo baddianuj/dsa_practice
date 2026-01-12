@@ -1,0 +1,37 @@
+package TreesTutorial.BFS;
+import java.util.*;
+public class BFSLC116 {
+    public class Node {
+        int val;
+        Node left;
+        Node right;
+        Node next;
+
+        Node(){
+
+        }
+    }
+
+
+    public Node connect(Node root) {
+        Queue<Node> queue = new LinkedList<>();
+        if (root==null) return null;
+
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            Node prev = null;
+            for(int i=0; i<size; i++){
+                Node curr = queue.poll();
+                if(prev!=null) prev.next = curr;
+                prev = curr;
+                if(curr.left!=null) queue.offer(curr.left);
+                if(curr.right!=null) queue.offer(curr.right);
+            }
+            prev.next=null;
+        }
+        return root;
+
+    }
+
+}
